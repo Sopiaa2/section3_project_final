@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5"><이더리움 가격 예측></h1>
+    <form method = "POST", action="/predict" >
+      <b>
+      <input placeholder="최고가" type="number" min="0" step="1" required name = 'high'> <br><br>
+      <input placeholder="최저가" type="number" min="0" step="1" required name = 'low'> <br><br>
+      <input placeholder="종가" type="number" min="0" step="1" required name = 'close'> <br><br>
+      <input placeholder="거래량" type="number" min="0" step="1" required name = 'volume'> <br><br>
+      </b>
+      <input type="submit" , value="PRESS">
+    </form>
+    <p class="lead">순서대로 입력해주세요.</p>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted"></span>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
